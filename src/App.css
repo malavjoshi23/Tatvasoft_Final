@@ -1,0 +1,587 @@
+/* GLOBAL CSS */
+body {
+  overflow-x: hidden;
+}
+
+input {
+  border-radius: 5px;
+}
+
+::selection {
+  color: white;
+  background: #f14d54;
+}
+
+
+/* Register */
+
+.personalInfoForm {
+  width: 900px
+}
+
+.personalInfo {
+  font-size: 1.4em;
+  border-bottom: 1px solid black;
+  padding: 10px;
+  position: relative;
+}
+
+.nameDetails {
+  display: flex;
+  justify-content: space-between;
+}
+
+.inputClass {
+  display: flex;
+  flex-direction: column;
+}
+
+.inputClass>input {
+  padding: 10px;
+  width: 30em;
+}
+
+.emailInput {
+  padding: 10px;
+  width: 66em;
+}
+
+.passwordDetails {
+  display: flex;
+  justify-content: space-between;
+}
+
+.loginInfo {
+  font-size: 1.4em;
+  border-bottom: 1px solid black;
+  padding: 10px;
+  position: relative;
+}
+
+.personalInfoForm>button {
+  padding: 15px;
+  margin-top: 2em;
+  background-color: #f14d54;
+  border: none;
+  border-radius: 3px;
+  color: aliceblue;
+}
+
+.personalInfoForm>button:hover {
+  background-color: white;
+  color: #f14d54;
+  border: 1px solid #f14d54;
+  cursor: pointer;
+}
+
+/* Login */
+
+.login {
+  display: flex;
+  justify-content: space-between;
+}
+
+.login>div>p {
+  font-size: 1.4em;
+  border-bottom: 1px solid black;
+  padding: 10px;
+}
+
+.loginButton {
+  padding: 15px;
+  margin-top: 2em;
+  background-color: #f14d54;
+  border: none;
+  border-radius: 3px;
+  color: aliceblue;
+}
+
+.loginButton:hover {
+  background-color: white;
+  color: #f14d54;
+  border: 1px solid #f14d54;
+  cursor: pointer;
+}
+
+.loginForm {
+  width: 900px;
+}
+
+.loginInput {
+  display: flex;
+  flex-direction: column;
+}
+
+.loginInput>input {
+  padding: 10px;
+  width: 30em;
+}
+
+@media only screen and (max-width: 950px) {
+
+  body {
+    overflow-x: hidden;
+  }
+
+  /* login */
+  .loginContainer {
+    padding: 15px;
+  }
+
+  .login {
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  .loginButton {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .loginForm {
+    width: 100%;
+  }
+
+  .loginInput>input {
+    padding: 10px;
+    width: 90%;
+  }
+
+  /* Register */
+  .personalInfoForm {
+    width: 100%;
+    padding: 2px
+  }
+
+  .passwordDetails {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nameDetails {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .emailInput {
+    padding: 10px;
+    width: 90%;
+  }
+
+  .inputClass>input {
+    padding: 10px;
+    width: 90%;
+  }
+
+  .registerContainer {
+    padding: 15px;
+  }
+
+  /* navbar */
+  .box {
+    width: 100%;
+  }
+
+  /* SearchResult.js */
+  .searchBoxHomeOuter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+  }
+
+  .searchBoxHome {
+    padding: 15px;
+    height: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .searchBoxHome>input {
+    padding: 10px;
+    width: 10px;
+    border: 1px solid lightgray;
+  }
+
+  .searchResults {
+    display: inline;
+    width: 18em;
+  }
+}
+
+/* Home */
+.search {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 7%;
+  padding-right: 7%;
+}
+
+.search>h2 {
+  color: "#424242";
+}
+
+.search>input {
+  height: 30px;
+  align-self: center;
+  border-radius: 0%;
+  padding: 10px;
+}
+
+
+/* App.js */
+.navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  box-shadow:
+    0 10px 27px rgba(0, 0, 0, 0.20);
+}
+
+.nav {
+  padding: 5px;
+  padding-left: 10px;
+}
+
+/* SearchResult.js */
+.searchBoxHomeOuter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f4f4;
+}
+
+.searchBoxHome {
+  padding: 15px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.searchBoxHome>input {
+  padding: 12px;
+  width: 40em;
+  border: 1px solid lightgray;
+}
+
+.searchBoxHome>input:focus {
+  outline: none;
+}
+
+.searchResults {
+  display: inline;
+  background-color: white;
+  width: 40em;
+  padding: 15px;
+  z-index: 50;
+}
+
+.searchResultsOuter {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.searchResultInner1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.searchResultInner2 {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* AddBook.js */
+.addForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label {
+  display: block;
+}
+
+.addFormInput {
+  width: 25em;
+  padding: 15px;
+}
+
+.addFormInputImage {
+  width: 25em;
+  padding: 15px;
+  color: #444;
+  padding: 5px;
+  background: #fff;
+  border-radius: 10px;
+  border: 1px solid #555;
+}
+
+.addFormInputImage::file-selector-button {
+  margin-right: 20px;
+  border: none;
+  background: #FF101B;
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+  transition: background .2s ease-in-out;
+}
+
+.addFormInputImage::file-selector-button:hover {
+  background: #a52026;
+}
+
+.addBookHeading {
+  border-bottom: 1px solid #FF101B;
+  padding: 2px;
+}
+
+/* Footer.js */
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 28px;
+  bottom: 0;
+  background-color: #F9F9F9;
+  width: 100%;
+}
+
+.footer>img {
+  width: 10em;
+}
+
+/* UpdateUser.js */
+.updateUserForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+}
+
+.updateForm {
+  display: flex;
+}
+
+.updateFormInput {
+  padding: 15px;
+  width: 30em;
+  border-color: lightgray;
+  border-radius: 0%;
+}
+
+.updateFormInput:focus {
+  outline: none;
+}
+
+.updateFormInputDiv {
+  margin-right: 15px;
+}
+
+@media only screen and (max-width: 1000px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  /* Searchbar */
+  .searchBoxHome {
+    width: auto;
+  }
+
+  /* UpdateUser */
+  .updateForm {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .updateFormInputDiv {
+    margin-left: 0px;
+  }
+
+  .updateFormInput {
+    padding: 15px;
+    width: 100%;
+    border-color: lightgray;
+    border-radius: 0%;
+  }
+
+  .updateUserForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+  }
+
+  /* footer */
+  .footer {
+    width: auto;
+  }
+
+  /* Cart.js */
+  .cartDetails {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* CartItem.js */
+
+  .cartItemContainer {
+    display: flex;
+
+  }
+
+  .cartItemOuter {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 5px;
+    width: 50%;
+    border: 1px solid lightgray;
+    border-radius: 8px;
+  }
+
+
+  .cartItemInner {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    justify-content: space-between;
+  }
+
+
+
+  .cartItemInnerdiv1 {
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+}
+
+
+/* CartItem.js */
+
+.cartItemContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.cartItemOuter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  width: 50%;
+  border: 1px solid lightgray;
+  border-radius: 8px;
+}
+
+.cartItemInner {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  justify-content: space-between;
+}
+
+.counter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.counter>button {
+  background-color: #f1535b;
+  border: none;
+  margin: 10px;
+  width: 25px;
+  height: 25px;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.cartItemInnerdiv1 {
+  padding: 8px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cartItemimg {
+  object-fit: cover;
+  width: 150px;
+  height: 117px;
+  margin: 5px;
+}
+
+.cartItemInnerdiv2 {
+  padding: 8px;
+  margin: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cartItemInnerdiv2>a {
+  color: #f1535b;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* Cart.js */
+.cartDetailsOuter {
+  display: flex;
+  justify-content: center;
+}
+
+.cartDetails {
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+}
+
+.placeOrderButtonOuter {
+  display: flex;
+  justify-content: center;
+}
+
+.placeOrderButton {
+  display: flex;
+  justify-content: flex-start;
+  width: 50%;
+}
+
+/* NotFound.js */
+.ErrorInner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.ErrorInner>p {
+  font-size: 10em;
+  color: #f1535b;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  font-weight: 700;
+}
+
+.ErrorInner1 {
+  font-size: 3em;
+  color: #f1535b;
+  margin-bottom: 4px;
+  font-weight: 500;
+}
